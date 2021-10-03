@@ -7,6 +7,8 @@
  * [JavaScript: The Definitive Guide, Chapter 4.8](https://bit.ly/2Z30rSk)
  */
 
+const { sqrt } = require('prelude-ls');
+
 /**
  * Calculates the perimeter of the rectangle rounded to 2 decimal places
  * @param {number} width - the width of the rectangle
@@ -17,6 +19,8 @@
 
 function rectanglePerimeter(width, height) {
   // write your code here & return
+  const number = (width + height) * 2;
+  return number;
 }
 
 /**
@@ -28,6 +32,8 @@ function rectanglePerimeter(width, height) {
  */
 function rectangleArea(width, height) {
   // write your code here & return
+  const number = width * height;
+  return number;
 }
 
 /**
@@ -42,6 +48,9 @@ function rectangleArea(width, height) {
  */
 function circleCircumference(radius) {
   // write your code here & return
+  let number = 2 * Math.PI * radius;
+  number = +number.toFixed(2);
+  return number;
 }
 
 /**
@@ -52,6 +61,9 @@ function circleCircumference(radius) {
  */
 function circleArea(radius) {
   // write your code here & return
+  let number = Math.PI * (radius * radius);
+  number = +number.toFixed(2);
+  return number;
 }
 
 /**
@@ -64,6 +76,9 @@ function circleArea(radius) {
  */
 function triangleArea(base, height) {
   // write your code here & return
+  let number = (height * base) / 2;
+  number = +number.toFixed(2);
+  return number;
 }
 
 /**
@@ -75,6 +90,9 @@ function triangleArea(base, height) {
  */
 function pythagorean(sideA, sideB) {
   // write your code here & return
+  let number = sqrt(sideA * sideA + sideB * sideB);
+  number = +number.toFixed(2);
+  return number;
 }
 
 module.exports = {

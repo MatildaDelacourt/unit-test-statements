@@ -28,7 +28,7 @@ test('convertMinutesToSeconds', () => {
 });
 
 test('convertHoursToSeconds', () => {
-  expect(convertHoursToSeconds(1)).toBe(3600);
+  expect(convertHoursToSeconds(1)).toEqual(3600);
   expect(convertHoursToSeconds(2)).toBe(7200);
   expect(convertHoursToSeconds(1.5)).toBe(5400);
   expect(convertHoursToSeconds(0)).toBe(0);
