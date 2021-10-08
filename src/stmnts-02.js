@@ -45,8 +45,7 @@ function betterSum(x, y) {
  */
 function remainder(number, divisor) {
   // write your code here & return value
-  number %= divisor;
-  return number;
+  return number % divisor;
 }
 module.exports = {
   sum,
